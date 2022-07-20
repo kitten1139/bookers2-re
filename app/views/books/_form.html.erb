@@ -1,0 +1,16 @@
+<h2>New book</h2>
+<%= form_with model: book do |f| %>
+  <div class="group">
+    <p>Title</p>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="group mt-2">
+    <p>Opinion</p>
+    <%= f.text_area :body %>
+  </div>
+
+  <div class="group mt-2">
+    <%= f.submit "Create Book", class: "btn btn-success" %>
+  </div>
+<% end %>
